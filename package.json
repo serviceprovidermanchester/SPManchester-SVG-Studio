@@ -1,0 +1,40 @@
+﻿{
+  "name": "spmanchester-svg-studio",
+  "version": "1.0.0",
+  "description": "Enterprise-grade, client-side SVG transformation suite by SPManchester Private Limited. 100% private in-browser conversion to PNG, WebP, JPG, PDF, ICO, BMP, and Base64.",
+  "author": "Sayed Mudassar Akbar <info@spmanchester.com>",
+  "company": "SPManchester Private Limited",
+  "homepage": "https://www.spmanchester.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/serviceprovidermanchester/SPManchester-SVG-Studio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/spmanchester/svg/issues",
+    "email": "info@spmanchester.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "svg",
+    "svg-converter",
+    "svg-to-png",
+    "svg-to-webp",
+    "svg-to-jpg",
+    "svg-to-pdf",
+    "svg-to-ico",
+    "svg-to-bmp",
+    "svg-to-base64",
+    "vector-graphics",
+    "canvas-api",
+    "client-side",
+    "privacy-first",
+    "spmanchester",
+    "open-source"
+  ],
+  "scripts": {
+    "start": "npx serve . -l 3000",
+    "dev": "npx serve . -l 3000",
+    "test": "node -e \"console.log('Validating project structure...'); const fs = require('fs'); ['svg-to-png','svg-to-webp','svg-to-jpg','svg-to-pdf','svg-to-ico','svg-to-bmp','svg-to-base64'].forEach(dir => { if(!fs.existsSync(dir + '/index.html')) throw new Error('Missing index.html in ' + dir); }); console.log('All 7 converter suites intact and verified successfully.');\""
+  }
+}
+
